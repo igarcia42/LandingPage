@@ -1,6 +1,12 @@
-* {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-image: url(img/foto.jpg);
-    background-size: 100%; 
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat; 
     background-position: center;
 }
