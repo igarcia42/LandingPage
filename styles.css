@@ -72,6 +72,9 @@ body {
     border-radius: 0 25px 25px 0;
     font-size: 18px;
 }
+a {
+    text-decoration: none;
+}
 .shortcut-bar {
     display: flex;
     gap: 25px;
