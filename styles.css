@@ -16,6 +16,7 @@ body {
     position: relative;
 }
 .profile {
+    
     position: absolute;
     top: 20px;
     right: 20px;
@@ -25,6 +26,14 @@ body {
     color: rgb(0, 0, 0);
     font-size: 18px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.profile span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
 .profile img {
     width: 40px;
     height: 40px;
