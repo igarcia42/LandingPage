@@ -22,7 +22,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
 }
 .profile img {
@@ -63,7 +63,7 @@ body {
 }
 .shortcut-bar {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     margin-top: 20px;
 }
 .shortcut-bar .shortcut {
