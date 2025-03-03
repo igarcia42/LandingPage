@@ -100,4 +100,6 @@ a {
 footer {
     background-color: rgb(77, 79, 82);
     color: white;
+    padding: 30px;
+    text-align: center;
 }
