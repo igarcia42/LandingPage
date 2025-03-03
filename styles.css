@@ -50,7 +50,7 @@ body {
 .search-container {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.519);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 25px;
     padding: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -62,10 +62,10 @@ body {
     border: none;
     outline: none;
     border-radius: 25px 0 0 25px;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0);
 }
 .search-button {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
     padding: 10px;
