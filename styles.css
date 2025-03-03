@@ -20,9 +20,9 @@ body {
     justify-content: center;
     flex-direction: column;
     border-radius: 9999px;
-  }
-  
-  .backdrop {
+}
+
+.backdrop {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -32,8 +32,8 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
-  .backdrop::before {
+}
+.backdrop::before {
     content: "";
     position: absolute;
     height: 10.5rem;
@@ -41,8 +41,8 @@ body {
     border-radius: 9999px;
     background: linear-gradient(144deg, #af40ff, #4f46e5);
     animation: rotate 1.5s linear infinite;
-  }
-  .backdrop::after {
+}
+.backdrop::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -50,9 +50,9 @@ body {
     backdrop-filter: blur(8px);
     border-radius: 9999px;
     z-index: 1;
-  }
-  
-  .action {
+}
+
+.action {
     --sz-light-hover: 60px;
     --rd-light-hover: 9999px;
     --l-light-hover: 14px;
@@ -63,10 +63,10 @@ body {
     align-items: center;
     justify-content: center;
     transition:
-      transform,
-      color,
-      background-color,
-      300ms ease;
+    transform,
+    color,
+    background-color,
+    300ms ease;
     height: 3.5rem;
     width: 3.5rem;
     border: none;
@@ -75,9 +75,9 @@ body {
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 9999px;
-  }
-  
-  .action-icon {
+}
+
+.action-icon {
     height: 100%;
     width: 100%;
     position: relative;
@@ -86,21 +86,21 @@ body {
     border-radius: 9999px;
     background-color: #f1f1f1;
     transition:
-      transform,
-      color,
-      background,
-      300ms ease;
-  }
-  
-  .action-content {
+    transform,
+    color,
+    background,
+    300ms ease;
+}
+
+.action-content {
     --sz-light-hover: 100px;
     --rd-light-hover: 6px;
     --l-light-hover: 0px;
     --cl-light: #fff;
     --cr-light: #af40ff;
     transition:
-      transform,
-      400ms ease;
+    transform,
+    400ms ease;
     opacity: 0;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -119,13 +119,13 @@ body {
     left: 0;
     z-index: -1;
     border: 1px solid #ccc;
-  }
-  
-  .action-content::before {
+}
+
+.action-content::before {
     content: attr(data-content);
     transition:
-      transform,
-      300ms ease;
+    transform,
+    300ms ease;
     text-transform: capitalize;
     font-size: medium;
     font-weight: 600;
@@ -134,37 +134,37 @@ body {
     background-color: #fff;
     border-radius: calc(var(--rd-light-hover) - 2px);
     padding-inline: 4px;
-  }
-  
-  .action::after,
-  .action-content::after {
+}
+
+.action::after,
+.action-content::after {
     content: "";
     opacity: 0;
     position: absolute;
     border-radius: var(--rd-light-hover);
     transition: all 50ms ease 200ms;
     background: conic-gradient(
-      from 45deg at 50% 50%,
-      var(--cl-light),
-      var(--cr-light),
-      var(--cl-light),
-      var(--cl-light),
-      var(--cl-light),
-      var(--cr-light),
-      var(--cl-light),
-      var(--cl-light),
-      var(--cl-light)
+    from 45deg at 50% 50%,
+    var(--cl-light),
+    var(--cr-light),
+    var(--cl-light),
+    var(--cl-light),
+    var(--cl-light),
+    var(--cr-light),
+    var(--cl-light),
+    var(--cl-light),
+    var(--cl-light)
     );
-  }
-  
-  .action:hover .action-icon {
+}
+
+.action:hover .action-icon {
     color: #000;
     background-color: #fff;
     transform: scale(1.4) translate3d(12px, 0px, 12px);
-  }
-  
-  .action:hover::after,
-  .action-content::after {
+}
+
+.action:hover::after,
+.action-content::after {
     height: var(--sz-light-hover);
     width: var(--sz-light-hover);
     left: var(--l-light-hover);
