@@ -92,5 +92,5 @@ body {
     transition: background 0.3s;
 }
 .shortcut-bar .shortcut:hover {
-    background-color: rgba(38, 39, 15, 0.8);
+    background-color: rgba(38, 39, 15, 0.9);
 }
