@@ -33,6 +33,7 @@ body {
     justify-content: center;
     overflow: hidden;
 }
+
 .backdrop::before {
     content: "";
     position: absolute;
@@ -42,6 +43,7 @@ body {
     background: linear-gradient(144deg, #af40ff, #4f46e5);
     animation: rotate 1.5s linear infinite;
 }
+
 .backdrop::after {
     content: "";
     position: absolute;
@@ -63,10 +65,10 @@ body {
     align-items: center;
     justify-content: center;
     transition:
-    transform,
-    color,
-    background-color,
-    300ms ease;
+        transform,
+        color,
+        background-color,
+        300ms ease;
     height: 3.5rem;
     width: 3.5rem;
     border: none;
@@ -86,10 +88,10 @@ body {
     border-radius: 9999px;
     background-color: #f1f1f1;
     transition:
-    transform,
-    color,
-    background,
-    300ms ease;
+        transform,
+        color,
+        background,
+        300ms ease;
 }
 
 .action-content {
@@ -99,8 +101,8 @@ body {
     --cl-light: #fff;
     --cr-light: #af40ff;
     transition:
-    transform,
-    400ms ease;
+        transform,
+        400ms ease;
     opacity: 0;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -124,8 +126,8 @@ body {
 .action-content::before {
     content: attr(data-content);
     transition:
-    transform,
-    300ms ease;
+        transform,
+        300ms ease;
     text-transform: capitalize;
     font-size: medium;
     font-weight: 600;
@@ -144,16 +146,16 @@ body {
     border-radius: var(--rd-light-hover);
     transition: all 50ms ease 200ms;
     background: conic-gradient(
-    from 45deg at 50% 50%,
-    var(--cl-light),
-    var(--cr-light),
-    var(--cl-light),
-    var(--cl-light),
-    var(--cl-light),
-    var(--cr-light),
-    var(--cl-light),
-    var(--cl-light),
-    var(--cl-light)
+        from 45deg at 50% 50%,
+        var(--cl-light),
+        var(--cr-light),
+        var(--cl-light),
+        var(--cl-light),
+        var(--cl-light),
+        var(--cr-light),
+        var(--cl-light),
+        var(--cl-light),
+        var(--cl-light)
     );
 }
 
@@ -171,6 +173,7 @@ body {
     opacity: 1;
     animation: rotate 4s linear infinite;
 }
+
 @keyframes rotate {
     from {
         transform: rotate(0);
@@ -191,4 +194,4 @@ body {
 
 .action:hover .action-content::before {
     transform: translateX(0px);
-}  
+}
