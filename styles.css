@@ -29,6 +29,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .profile span {
+    margin-left: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
