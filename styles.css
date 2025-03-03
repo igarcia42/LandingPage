@@ -21,7 +21,7 @@ body {
     left: 20px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    column-gap: 10px;
     color: rgb(0, 0, 0);
     font-size: 18px;
 }
@@ -29,7 +29,6 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .profile span {
-    margin-left: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
