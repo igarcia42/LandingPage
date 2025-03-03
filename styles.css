@@ -50,7 +50,7 @@ body {
 .search-container {
     display: flex;
     align-items: center;
-    background: white;
+    background: rgba(255, 255, 255, 0.519);
     border-radius: 25px;
     padding: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@ body {
     border-radius: 25px 0 0 25px;
 }
 .search-button {
-    background: white;
+    background: rgba(255, 255, 255, 0.519);
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -91,5 +91,5 @@ body {
     transition: background 0.3s;
 }
 .shortcut-bar .shortcut:hover {
-    background-color: rgb(74, 4, 94);
+    background-color: rgba(38, 39, 15, 0.8);
 }
