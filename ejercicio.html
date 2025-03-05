@@ -21,10 +21,44 @@
     <script>
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
+
+        // Ajustar el tamaño del canvas
         canvas.width = 300;
         canvas.height = 200;
-        ctx.fillStyle = "blue";
-        ctx.fillRect(50, 50, 100, 100);
+        canvas.style.backgroundColor = "white"; // Fondo blanco para visualizar mejor
+
+        let painting = false;
+
+        // Función para comenzar a dibujar
+        function startPosition(e) {
+            painting = true;
+            draw(e); // Dibuja un punto inicial
+        }
+
+        // Función para detener el dibujo
+        function endPosition() {
+            painting = false;
+            ctx.beginPath(); // Reinicia el trazo para evitar líneas conectadas extrañas
+        }
+
+        // Función para dibujar
+        function draw(e) {
+            if (!painting) return;
+        
+            ctx.lineWidth = 3; // Grosor del lápiz
+            ctx.lineCap = "round"; // Suaviza los bordes
+            ctx.strokeStyle = "black"; // Color del lápiz
+        
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(e.offsetX, e.offsetY);
+        }
+
+        // Eventos del ratón
+        canvas.addEventListener("mousedown", startPosition);
+        canvas.addEventListener("mouseup", endPosition);
+        canvas.addEventListener("mousemove", draw);
     </script>    
 </body>
 </html>
