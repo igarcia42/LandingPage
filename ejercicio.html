@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio</title>
+    <title>Exercici</title>
+    <link rel="stylesheet" href="exercici.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Benvingut a la nova pàgina web</h1>
+        <canvas id="myCanvas"></canvas>
+        <form>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom">
+            <label for="email">Correu electrònic:</label>
+            <input type="email" id="email" name="email">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = 300;
+        canvas.height = 200;
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 100, 100);
+    </script>    
 </body>
 </html>
