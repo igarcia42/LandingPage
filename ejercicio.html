@@ -29,7 +29,7 @@
         // Ajustar el tamaño del canvas
         canvas.width = 300;
         canvas.height = 200;
-        canvas.style.backgroundColor = "white"; // Fondo blanco para visualizar mejor
+        canvas.style.backgroundColor = "white"; 
 
         let painting = false;
 
@@ -49,9 +49,9 @@
         function draw(e) {
             if (!painting) return;
         
-            ctx.lineWidth = 3; // Grosor del lápiz
+            ctx.lineWidth = 5; // Grosor del lápiz
             ctx.lineCap = "round"; // Suaviza los bordes
-            ctx.strokeStyle = "black"; // Color del lápiz
+            ctx.strokeStyle = "purple"; // Color del lápiz
         
             ctx.lineTo(e.offsetX, e.offsetY);
             ctx.stroke();
